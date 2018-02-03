@@ -1,9 +1,113 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Damion|PT+Serif');
 
 body {
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: url(/images/texture.jpg);
+    font-family: 'PT Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(/images/black_c.jpg);
     background-size: 320px;
     background-repeat: repeat;
     background-color: #242424;
+}
+
+.pageCard {
+    background-image: url(/images/white_c.jpg);
+    background-size: 320px;
+    background-repeat: repeat;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    width: auto;
+}
+
+.navbar {
+    font-family: 'Damion', 'PT Serif', sans-serif;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 1px solid hsla(0, 83%, 35%, 1);
+    border-top: 1px solid hsla(0, 83%, 67%, 1);
+    background-image: linear-gradient(hsla(0, 84%, 53%, 1), hsla(3, 81%, 40%, 1));
+    position: relative;
+    padding: 0.125rem 1rem;
+    z-index: 1;
+    box-shadow: 0 0px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-brand {
+    color: #EFEFEF;
+    text-shadow: 0px -1px rgb(163, 15, 15);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #EFEFEF;
+    text-shadow: 0px -1px rgb(168, 29, 29);
+}
+
+.navbar:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    border-radius: 0px;
+    left: 2px;
+    right: 2px;
+    display: none;
+    bottom: 1px;
+    border: 1pt dashed #c3362b;
+    border-left: none;
+    border-right: none;
+    z-index: -1;
+}
+
+.navbar-toggler {
+    position: relative;
+    right: -0.5rem;
+    padding: 0.25rem 0.5rem;
+    outline: none !important;
+    line-height: 0.5;
+    border-radius: 3px;
+}
+
+.navbar-toggler-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.navbar-dark .navbar-toggler {
+    border: 1px solid #a30f0f;
+    background-image: linear-gradient(#ed3737, #b21712);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-toggler:active {
+    background-image: linear-gradient(#b21712, #db1414);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240, 240, 240, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.btn-primary {
+    border: 1px solid #a30f0f;
+    background-image: linear-gradient(#ed3737,#b21712);
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,.1);
+    color: #efefef;
+    text-shadow: 0 -1px #a30f0f;
+    font-family: 'Damion','PT Serif',sans-serif;
+    text-transform: lowercase;
+}
+
+.btn-primary:hover {
+    color: #efefef;
+    background-image: linear-gradient(#ed3737,#b21712);
+    border-color: #7b0404;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus, .btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(178, 23, 18,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-image: linear-gradient(#b21712, #db1414);
+    border-color: #7b0404;
+}
+
+.btn {
+    padding: 0.05rem 0.5rem;
 }
