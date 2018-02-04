@@ -7,6 +7,8 @@ block titleDeterminer
     - var description = pageDesc
   else 
     - var description = 'Oops! There\'s no description available for this page.'
+  unless pageID
+    - var pageID = ''
 doctype html
 html(lang='en')
   head
@@ -42,8 +44,13 @@ html(lang='en')
     .pageCard.container.m-1.ml-md-auto.ml-sm-auto.mr-md-auto.mr-sm-auto.mt-md-5
       block header
         mixin link(href, friendlyName)
+          - var active
+          if href === pageID
+            - active = true
+          else
+            - active = false
           li.nav-item
-            a.nav-link(href=href)= friendlyName
+            a.nav-link(href=href active=active)= friendlyName
         nav.navbar.navbar-expand-md.row.navbar-dark
           div
             a.navbar-brand(href='/')
@@ -74,7 +81,7 @@ html(lang='en')
             +link('https://instagram.com/Bryan.Agredo', 'Instagram')
             +link('https://linkedin.com/in/Bryan-Agredo', 'LinkedIn')
           p
-            | Designed and built with love by 
+            | Built and designed with love by 
             a(href='https://twitter.com/Bryan_Agredo' target="_blank") @Bryan_Agredo
             |  in Miami.
       script(type='text/javascript',  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin='anonymous')
