@@ -111,3 +111,55 @@ body {
 .btn {
     padding: 0.05rem 0.5rem;
 }
+
+h1 {
+    font-family: 'Damion', 'PT Serif', sans-serif;
+}
+
+.footer {
+    text-align: center;
+    color: #AFAFAF;
+    text-shadow: 0 0.75px #8c8c8c;
+}
+
+.footer .footer-links {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.footer .footer-links .footer-item {
+    display: inline-block;
+}
+
+.footer .footer-links .footer-item+li {
+    margin-left: 1rem;
+}
+
+.footer p {
+    margin-bottom: 0.25rem;
+}
+
+.footer a {
+    color: #d82c2a;
+    text-shadow: 0 0.75px #ae1512;
+}
+
+.forHire {
+    margin-right: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.05));
+    padding: 0rem 0.5rem;
+    display: inline-block;
+    vertical-align: baseline;
+    line-height: 1.5;
+    border-radius: 3px;
+    border-top: 1px solid #a30f0f;
+    text-shadow: 0 -1px #a30f0f;
+    font-size: 1rem;
+    text-decoration: none !important;
+    color: #EFEFEF;
+}
+
+.forHire:hover {
+    color: #FFFFFF;
+}
