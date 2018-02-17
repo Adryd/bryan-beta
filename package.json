@@ -1,7 +1,7 @@
 {
-  "name": "prismarine-website",
+  "name": "beta-bryan",
   "version": "0.1.0",
-  "description": "The website for the PrismarineJS project.",
+  "description": "Bryan Agredo's website.",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^3.9.1",

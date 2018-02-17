@@ -1,0 +1,112 @@
+@import url("https://use.typekit.net/ivs5koa.css");
+
+.navbar {
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.navbar .nav-link[active] {
+  color: #444;
+    background-position: 0.5rem 2.75rem;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" xml…00"><rect width="500" height="100" style="fill:rgb(235, 34, 34);" /></svg>');
+}
+
+.footer .footer-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer .footer-links .footer-item {
+  display: inline-block;
+}
+
+.footer .footer-links .footer-item:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+.footer {
+  text-align: left;
+  text-transform: lowercase;
+}
+
+a {
+  color: #eb2222;
+}
+
+a:hover {
+  color: #a20606;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+html {
+  background-color: #FCFCFC;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-top: 2px solid #eb2222;
+}
+
+body {
+  width: 100%;
+  background-color: #FCFCFC;
+}
+
+:root, html, body {
+  font-family: 'aktiv-grotesk', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-primary {
+  background-color: #eb2222;
+  border: 0;
+  border-radius: 0;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  background-color: #a20606;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(235, 34, 34, 0.5);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #c91313;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(235, 34, 34, 0.25);
+} 
+
+.markdown-large > h1:first-of-type {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.markdown-large h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .markdown-large > h1:first-of-type {
+    font-size: 6rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+}
+
+.markdown-large {
+  padding-left: 0;
+  padding-right: 0;
+}
