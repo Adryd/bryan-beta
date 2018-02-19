@@ -110,3 +110,15 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
+
+.markdown-large img {
+  max-width: 100%;
+}
+
+.markdown-large h2 code {
+  font-size: 50%;
+  color: #777;
+  text-transform: uppercase;
+  font-family: inherit;
+  display: inline-block;
+}
