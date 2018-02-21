@@ -21,10 +21,11 @@
 
 .footer .footer-links .footer-item {
   display: inline-block;
+  line-height: 1.5;
 }
 
-.footer .footer-links .footer-item:not(:first-child) {
-  margin-left: 1.5rem;
+.footer .footer-links .footer-item:not(:last-child) {
+  margin-right: 1.5rem;
 }
 
 .footer {
