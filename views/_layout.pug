@@ -36,6 +36,13 @@ html(lang='en')
       link(rel='apple-touch-icon',    href='/images/bryan-512x.png')
       link(rel='stylesheet',          href='/css/bootstrap.min.css')
       link(rel='stylesheet',          href='/css/global_new.css')
+      // Global site tag (gtag.js) - Google Analytics
+      script(async src='https://www.googletagmanager.com/gtag/js?id=UA-114515184-1')
+      script(type='text/javascript').
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-114515184-1');
       script(type='text/javascript').
         (function(d) {
           var config = {
