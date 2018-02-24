@@ -31,6 +31,7 @@
 .footer {
   text-align: left;
   text-transform: lowercase;
+  color: #FEFEFE;
 }
 
 a {
@@ -53,12 +54,10 @@ html {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  border-top: 2px solid #eb2222;
 }
 
 body {
   width: 100%;
-  background-color: #FCFCFC;
 }
 
 :root, html, body {
@@ -122,4 +121,23 @@ body {
   text-transform: uppercase;
   font-family: inherit;
   display: inline-block;
+}
+
+html {
+  background-image: linear-gradient(to top right, #222222, #444444);
+  background-color: #333333;
+}
+
+body {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.pageCard {
+  background-image: linear-gradient(to bottom right, #FAFAFA, #FFFFFF);
+  flex: 1 1;
+  background-color: #FEFEFE;
+  position: relative;
 }

@@ -46,32 +46,33 @@ html(lang='en')
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
   body
-    .pageCard.container.ml-md-auto.ml-sm-auto.mr-md-auto.mr-sm-auto.pr-4.pl-4
-      block header
-        mixin link(href, friendlyName)
-          - var active
-          if href === pageID
-            - active = true
-          else
-            - active = false
-          li.nav-item
-            a.nav-link(href=href active=active)= friendlyName
-        nav.navbar.navbar-expand-md.row.navbar-light
-          div
-            a.navbar-brand(href='/')
-              span Bryan Agredo
-          button.navbar-toggler(type='button', data-toggle="collapse"
-          data-target="#navbarContent" aria-controls="navbarContent"
-          aria-expanded="false" aria-label="Toggle navigation")
-            span.navbar-toggler-icon
-          .collapse.navbar-collapse(id="navbarContent")
-            ul.navbar-nav.mr-auto
-              +link('/about', 'About')
-              +link('/portfolio', 'Portfolio')
-              +link('/contact', 'Contact')
-              +link('https://photos.bryan.plus/', 'Photos')
-      .content.pt-5
-        block content
+    .pageCard.container-fluid.ml-md-auto.ml-sm-auto.mr-md-auto.mr-sm-auto.pb-5.pl-0.pr-0
+      .container.pr-4.pl-4
+        block header
+          mixin link(href, friendlyName)
+            - var active
+            if href.indexOf(pageID) > -1
+              - active = true
+            else
+              - active = false
+            li.nav-item
+              a.nav-link(href=href active=active)= friendlyName
+          nav.navbar.navbar-expand-md.row.navbar-light
+            div
+              a.navbar-brand(href='/')
+                span Bryan Agredo
+            button.navbar-toggler(type='button', data-toggle="collapse"
+            data-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation")
+              span.navbar-toggler-icon
+            .collapse.navbar-collapse(id="navbarContent")
+              ul.navbar-nav.mr-auto
+                +link('/about.html', 'About')
+                +link('/portfolio.html', 'Portfolio')
+                +link('/contact.html', 'Contact')
+                +link('https://photos.bryan.plus/', 'Photos')
+        .content.pt-5
+          block content
     block footer
       mixin link(href, friendlyName)
         li.footer-item
