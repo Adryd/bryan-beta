@@ -23,6 +23,7 @@ gulp.task('sass', function () {
 
 gulp.task('data', function () {
   return gulp.src(['./_data/**/*.*'])
+    .pipe(jsonminify())
     .pipe(gulp.dest(function (file) {
       return file.base.split('_data\\')[0] + 'dist\\data\\' + file.base.split('_data\\')[1];
     }))
