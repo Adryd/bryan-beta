@@ -5,13 +5,19 @@ var pug = require('gulp-pug');
 var sass = require('gulp-sass');
 var minifyCSS = require('gulp-csso');
 var jsonminify = require('gulp-jsonminify');
+var sitemap = require('gulp-sitemap');
 
 gulp.task('html', function () {
-  return gulp.src(['./views/**/*.pug', '!./views/**/_*.pug'])
+  gulp.src(['./views/**/*.pug', '!./views/**/_*.pug'])
     .pipe(pug())
     .pipe(gulp.dest(function (file) {
       return file.base.split('views\\')[0] + 'dist\\' + file.base.split('views\\')[1];
+    }));
+  gulp.src(['./dist/**/*.html'], { read: false })
+    .pipe(sitemap({
+        siteUrl: 'https://bryan.plus'
     }))
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('sass', function () {
