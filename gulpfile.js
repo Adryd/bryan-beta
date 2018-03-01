@@ -35,4 +35,4 @@ gulp.task('watch', function(){
   gulp.watch('./_data/**/*.*', ['data']);
 })
 
-gulp.task('default', ['html', 'sass']);
+gulp.task('build', ['html', 'sass', 'data']);
