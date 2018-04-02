@@ -1,0 +1,17 @@
+extends _layout
+
+prepend titleDeterminer
+  - var pageTitle = 'Testimonials'
+  - var pageDesc = 'Read what people are saying about me. Get a glimpse into real people\'s testimonials.'
+  - var pageID = '/testimonials'
+
+block content
+  .col-lg-6.col-md-8.markdown-large
+    :markdown-it(linkify)
+      # Testimonials
+
+      > ### Incredible!
+      >
+      > I worked with Bryan to revamp the home page of my website. He was very respectable and good at communicating what he was doing. As soon as Bryan started, I knew he was going to get it done quickly and professionally with the attitude of "can do". Everyone at One Nation Gaming is truly impressed with his work and thankful his help. Bryan is the example of hard work and dedication.
+      >
+      > — Owner and Head Administrator of [OneNationGaming.com](OneNationGaming.com)
