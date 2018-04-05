@@ -1,0 +1,45 @@
+extends _layout
+
+prepend titleDeterminer
+  - var pageTitle = 'Reading Plus SeeReader Hack'
+  - var pageDesc = 'The official source for the Reading Plus SeeReader Hack, created exclusively by Bryan Agredo.'
+  - var pageID = '/reading-plus'
+
+block content
+  .col-lg-6.col-md-8.markdown-large
+    :markdown-it(linkify)
+      # Reading Plus SeeReader Hack
+      Updated April 5, 2018.
+      This tool allows you to save the story you're reading so you can
+      get back to it while answering the questions.
+
+      ## Instructions
+
+      **THIS IS ONLY TESTED ON CHROME. USE GOOGLE CHROME!**
+
+      1. Create a new bookmark. Give it any name you like. You can create a bookmark quickly by pressing the keys Ctrl+D. 
+         Click Edit. Copy and paste the code below exactly how it is into the URL text box:
+         
+         ```
+         javascript:String.prototype.Smartify=function(){var base=this.valueOf();var _a=new RegExp(/([\"]([a-zA-Z0-9\s\S]{0,}?)([\"]))/,'gm');var _b=new RegExp(/([^\"]([a-zA-Z0-9\s\S]{0,}?)([^\"]))/,'gm');var _c=new RegExp(/([0-9]){1,}([\"]){1}/,'gm');var _d=new RegExp(/([^\s0-9]{1,}[\'][a-zA-Z]{1,})/,'gm');var _e=new RegExp(/([\']([a-zA-Z0-9\s\S]{0,}?)([\']))/,'gm');var _f=new RegExp(/([^\s0-9]{0,}[\'][a-zA-Z]{0,})/,'gm');var _g=new RegExp(/(\s[\-]{2}\s)|(\s[\-]{1}\s)|([\-]{2})/,'gm');var _h=new RegExp(/[\"]/,'gm');var _i=new RegExp(/[\']/,'gm');var mod_base=base.replace(_a,function(a){var b=a.replace(_h,"");return`“${b}”`}).replace(_c,function(a){var b=a.replace(_h,"");return`${b}“`}).replace(_d,function(a){var b=a.replace(_i,"’");return b}).replace(_e,function(a){var b=a.replace(_i,"");return`‘${b}’`}).replace(_f,function(a){var b=a.replace(_i,"’");return`${b}`}).replace(_g," — ");return mod_base};if($("#ROGUE h2").length===0){var aaaaabo="<h2>"+$(".seeReader .content").attr("data-title")+"</h2>"}else{var aaaaabo=""}$("#app-wrapper").append($("<div id='ROGUE'>" + aaaaabo + "<p>" + [].slice.call(($("#text-data .para").map(function(a,e){return $(e).text().replace(/\n/g, "").replace(/(\s){3,7}/g, "</p><p>").replace(/(\s)/g, " ").toString().Smartify()}))).join("") + "</p>" + "</div>")).append('<style>@import url(https://s.codepen.io/anon/pen/BQyVZb.css);#ROGUE,#ROGUE p{word-break:normal;word-spacing:normal}#ROGUE h2,#ROGUE p{text-indent:0;color:rgba(0,0,0,.8)}#ROGUE p{font:inherit;font-family:medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;font-weight:400;font-style:normal;font-size:21px;line-height:1.58;margin-top:29px;letter-spacing:-.003em}#ROGUE,#ROGUE h2{font-style:normal}#ROGUE{word-wrap:break-word;background:#FFF;padding:.001rem 2rem .001rem 3rem;text-align:left;line-height:1.3;font-weight:400;margin:0 auto;font-size:20px;font-family:Georgia;width:700px;letter-spacing:normal;-webkit-user-select:initial}#ROGUE h2{font-family:medium-content-sans-serif-font,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;margin-top:4rem;font-weight:700;font-size:40px;line-height:1.04;letter-spacing:-.028em}#ROGUE:last-of-type{margin-bottom:8rem;}</style>');
+         ```
+      
+      2. When you're on a SeeReader passage, there will be a variety of sections to it (usually 3-5 sections). 
+         *You can view how many exist by *PAUSING* the passage and looking at the box in the bottom center.* 
+         
+         ![This passage contains 4 sections](https://i.imgur.com/a4MAa7Q.png)
+
+      3. For each section, **CLICK** the bookmark *ONCE*. 
+         Below the passage should appear a block of text with the title. 
+         It should look like this: 
+         
+         ![](https://i.imgur.com/VW4vJXH.png)
+
+      4. Every time you reach a new section, click the bookmark.
+         Repeat until the story is over.
+
+
+      
+      Permission is herein granted to users a license permissing personal use only. 
+      You may not redistribute, modify, or copy this work under any circumstances, 
+      provided the only exception for personal usage.

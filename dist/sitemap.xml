@@ -2,19 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://bryan.plus/about.html</loc>
-        <lastmod>2018-04-02T18:11:54.530Z</lastmod>
+        <lastmod>2018-04-05T17:24:48.466Z</lastmod>
     </url>
     <url>
         <loc>https://bryan.plus/contact.html</loc>
-        <lastmod>2018-04-02T18:11:54.583Z</lastmod>
+        <lastmod>2018-04-05T17:24:48.515Z</lastmod>
     </url>
     <url>
         <loc>https://bryan.plus//</loc>
-        <lastmod>2018-04-02T18:11:54.583Z</lastmod>
+        <lastmod>2018-04-05T17:24:48.516Z</lastmod>
     </url>
     <url>
         <loc>https://bryan.plus/portfolio.html</loc>
-        <lastmod>2018-04-02T18:11:54.583Z</lastmod>
+        <lastmod>2018-04-05T17:24:48.519Z</lastmod>
+    </url>
+    <url>
+        <loc>https://bryan.plus/reading-plus.html</loc>
+        <lastmod>2018-04-05T17:24:48.651Z</lastmod>
     </url>
     <url>
         <loc>https://bryan.plus/team.html</loc>
@@ -22,6 +26,6 @@
     </url>
     <url>
         <loc>https://bryan.plus/testimonials.html</loc>
-        <lastmod>2018-04-02T18:11:54.583Z</lastmod>
+        <lastmod>2018-04-05T17:24:48.653Z</lastmod>
     </url>
 </urlset>
